@@ -1,0 +1,11 @@
+alert_id,timestamp,service,severity,message,status
+CSV-001,2026-10-27T14:00:00,db-primary,warning,Slow query detected: SELECT on payments took 2300ms,open
+CSV-002,2026-10-27T14:01:00,db-primary,error,Slow query detected: SELECT on payments took 6100ms,open
+CSV-003,2026-10-27T14:02:00,db-primary,critical,Connection pool exhausted: 100/100 connections in use,open
+CSV-004,2026-10-27T14:03:00,api-server,warning,Request timeout calling db-primary after 30000ms,open
+CSV-005,2026-10-27T14:04:00,api-server,error,HTTP 504 rate 18% on /payments,open
+CSV-006,2026-10-27T14:05:00,frontend,error,Failed to fetch /api/payments: 504 Gateway Timeout,open
+CSV-007,2026-10-27T14:07:00,frontend,critical,Payment page availability below SLO: 96.4%,open
+CSV-008,2026-10-27T14:08:00,api-server,error,Request timeout calling db-primary after 30000ms,open
+CSV-009,2026-10-27T09:10:00,cdn,info,TLS certificate expires in 10 days,open
+CSV-010,2026-10-27T11:30:00,batch-worker,warning,Disk usage 85% on /data,open
